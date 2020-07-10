@@ -6,14 +6,14 @@ Simple REST API example with JWT Authentication
 
 ---
 
-First you need to create **.env** file
+First you need to create ```.env``` file
 
 ```shell script
 cp .env.example .env
 php artisan key:generate
 ```
 
-Update **.env** file with database connection
+Update ```.env``` file with database connection
 
 ```shell script
 DB_CONNECTION=mysql
@@ -23,6 +23,16 @@ DB_DATABASE=laravel
 DB_USERNAME=laravel
 DB_PASSWORD=secret
 ```
+
+Generate JWT secret key
+
+```shell script
+php artisan jwt:secret
+```
+
+This will update your ```.env``` file with something like ```JWT_SECRET=foobar```
+
+---
 
 #### Routes
 
