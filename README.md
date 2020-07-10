@@ -13,6 +13,17 @@ cp .env.example .env
 php artisan key:generate
 ```
 
+Update **.env** file with database connection
+
+```shell script
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=laravel
+DB_PASSWORD=secret
+```
+
 #### Routes
 
 ##### Auth
