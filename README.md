@@ -6,6 +6,8 @@ Simple REST API example with JWT Authentication
 
 ---
 
+#### Config
+
 First you need to create ```.env``` file
 
 ```shell script
@@ -31,6 +33,14 @@ php artisan jwt:secret
 ```
 
 This will update your ```.env``` file with something like ```JWT_SECRET=foobar```
+
+
+#### Running Migrations
+
+To run all of your outstanding migrations, execute the ```migrate``` artisan command:
+```shell script
+php artisan migrate
+```
 
 ---
 
